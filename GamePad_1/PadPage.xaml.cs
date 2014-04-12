@@ -75,6 +75,12 @@ namespace GamePad_1
             {
                 MessageBox.Show(e.Message);
             }        
-        }        
+        }
+
+        protected override void OnBackKeyPress(System.ComponentModel.CancelEventArgs e)
+        {
+            dataWriter.Dispose();
+            base.OnBackKeyPress(e);
+        }
     }
 }

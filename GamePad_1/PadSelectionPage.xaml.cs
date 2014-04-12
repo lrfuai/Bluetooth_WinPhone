@@ -24,6 +24,6 @@ namespace GamePad_1
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new Uri("/PadPage.xaml", UriKind.Relative));
-        }
+        }        
     }
 }
